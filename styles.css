@@ -1,0 +1,105 @@
+:root {
+  --Green: hsl(75, 94%, 57%);
+  --White: hsl(0, 0%, 100%);
+  --Grey: hsl(0, 0%, 20%);
+  --Dark-Grey: hsl(0, 0%, 12%);
+  --Off-Black: hsl(0, 0%, 8%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--Off-Black);
+  padding: 100px;
+  font-family: "Inter";
+}
+
+.card {
+    max-width: 400px;
+    margin: 0 auto;
+  background-color: var(--Dark-Grey);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+}
+
+img {
+  border-radius: 50%;
+  width: 100%;
+  max-width: 100px;
+  margin-top: 40px;
+  margin-bottom: 15px;
+}
+
+.btns {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+.btn {
+  background-color: var(--Grey);
+  border: none;
+  padding: 15px 80px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn:active {
+  background-color: var(--Green);
+}
+.btn:active a {
+  color: var(--Off-Black);
+  font-weight: 700;
+}
+
+.btn:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+button a {
+  text-decoration: none;
+  color: var(--White);
+  font-weight: 700;
+}
+
+h2 {
+  margin-top: 15px;
+  font-weight: 600;
+}
+
+h2,
+p {
+  color: var(--White);
+}
+
+.place {
+  color: var(--Green);
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.role {
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+@media screen and (max-width: 375px) {
+    body {
+        padding: 20px;
+    }
+  }
+@media screen and (max-width: 500px) {
+    body {
+        padding: 0 30px;
+    }
+    .card {
+        margin-top: 100px;
+    }
+  }
